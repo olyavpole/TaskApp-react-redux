@@ -12,7 +12,7 @@ const App = () => {
 
   const data = lists.map(list => {
     return (
-      <List title={list.title} cards={list.cards} key={list.id}/>
+      <List title={list.title} cards={list.cards} listID={list.id} key={list.id}/>
     )
   })
 

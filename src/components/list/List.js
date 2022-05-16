@@ -3,7 +3,7 @@ import Button from '../button/Button';
 
 import './list.scss'
 
-const List = ({title, cards}) => {
+const List = ({title, cards, listID}) => {
 
     const data = cards.map(card => {
         return (
@@ -16,7 +16,7 @@ const List = ({title, cards}) => {
             <div className="list">
                 <h2 className="list__title">{title}</h2>
                 {data}
-                <Button type='card'/>
+                <Button type='card' listID={listID}/>
             </div>
         </>
     )

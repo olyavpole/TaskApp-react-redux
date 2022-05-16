@@ -1,0 +1,69 @@
+.form {
+
+    &__title {
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        height: 30px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 15px 15px 0 0;
+        outline-color: #C88383;
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        display: block;
+        width: 48%;
+        height: 30px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        
+
+        &--left {
+            border-radius: 0 0 0 15px;
+        }
+
+        &--right {
+            border-radius: 0 0 15px 0;
+        }
+
+        &--card {
+            position: relative;
+            width: 100%;
+            height: 45px;
+            padding-left: 30px;
+            border-radius: 0 0 15px 15px;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                background-color: #571010;
+            }
+
+            &::after {
+                width: 1px;
+                height: 18px;
+                left: 52px;
+                top: 15px;
+            }
+
+            &::before {
+                height: 1px;
+                width: 18px;
+                left: 44px;
+                top: 23px;
+            }
+        }
+    }
+}
