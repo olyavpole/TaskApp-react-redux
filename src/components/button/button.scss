@@ -1,4 +1,7 @@
 .form {
+    display: block;
+    max-width: 300px;
+    width: 100%;
 
     &__title {
         font-size: 21px;
@@ -28,7 +31,6 @@
         background-color: #fff;
         border: none;
         cursor: pointer;
-        
 
         &--left {
             border-radius: 0 0 0 15px;
@@ -38,32 +40,45 @@
             border-radius: 0 0 15px 0;
         }
 
-        &--card {
-            position: relative;
-            width: 100%;
-            height: 45px;
-            padding-left: 30px;
-            border-radius: 0 0 15px 15px;
+    }
+}
 
-            &::before, &::after {
-                content: '';
-                position: absolute;
-                background-color: #571010;
-            }
+.button {
+    display: block;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 300px;
+    height: 45px;
+    padding-left: 30px;
 
-            &::after {
-                width: 1px;
-                height: 18px;
-                left: 52px;
-                top: 15px;
-            }
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        background-color: #571010;
+    }
 
-            &::before {
-                height: 1px;
-                width: 18px;
-                left: 44px;
-                top: 23px;
-            }
-        }
+    &::after {
+        width: 1px;
+        height: 18px;
+        left: 52px;
+        top: 15px;
+    }
+
+    &::before {
+        height: 1px;
+        width: 18px;
+        left: 44px;
+        top: 23px;
+    }
+
+    &--card {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+    }
+
+    &--list {
+        border-radius: 15px;
     }
 }

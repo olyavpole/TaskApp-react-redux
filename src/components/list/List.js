@@ -15,7 +15,9 @@ const List = ({title, cards, listID}) => {
         <>
             <div className="list">
                 <h2 className="list__title">{title}</h2>
-                {data}
+                <div className="card__wrapper">
+                    {data}
+                </div>
                 <Button type='card' listID={listID}/>
             </div>
         </>

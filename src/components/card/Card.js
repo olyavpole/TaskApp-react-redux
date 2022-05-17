@@ -4,7 +4,7 @@ const Card = ({text}) => {
     return (
         <>
             <div className="card">
-                <h3 className="card__text">{text}</h3>
+                <p className="card__text">{text}</p>
             </div>
         </>
     )

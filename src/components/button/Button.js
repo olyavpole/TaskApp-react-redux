@@ -21,6 +21,11 @@ const Button = ({type, listID}) => {
         setFormOpen(false);
     }
 
+    const onCancel = () => {
+        setText('');
+        setFormOpen(false);
+    }
+
     const renderForm = () => {
         return (
             <>
@@ -39,7 +44,7 @@ const Button = ({type, listID}) => {
                         >add {type}</button>
                         <button 
                             className="form__btn form__btn--right"
-                            // onClick={() => dispatch(cancelAction())}
+                            onClick={onCancel}
                         >cancel</button>
                     </div>
                 </div>
@@ -50,7 +55,7 @@ const Button = ({type, listID}) => {
     const renderAddButton = () => {
         return (
             <button 
-                className={classes}
+                className={`button ${classes}`}
                 onClick={() => setFormOpen(true)}
                 >add new {type}</button>
         )

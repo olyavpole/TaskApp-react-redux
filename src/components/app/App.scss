@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #ececec;
+}
+
+.list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}

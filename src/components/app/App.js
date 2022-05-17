@@ -1,10 +1,11 @@
 
 import { useSelector } from 'react-redux';
 
+import Logo from '../logo/Logo';
 import List from '../list/List';
 import Button from '../button/Button';
 
-import './App.css';
+import './App.scss';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
 
   return (
     <>
+      <Logo/>
       <div className="list__wrapper">
         {data}
         <Button type='list'/>
