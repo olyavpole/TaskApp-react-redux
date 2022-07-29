@@ -11,3 +11,10 @@ export const addCard = (text, listID) => {
         payload: {text, listID}
     }
 }
+
+export const moveCard = (card, listID, targetListID) => {
+    return {
+        type: 'MOVE_CARD',
+        payload: {card, listID, targetListID}
+    }
+}
